@@ -9,3 +9,10 @@
 - Add ability to create messages
 - Add mute button
 - Add stop button
+
+# Tools
+
+- uuid
+- NodeJS
+- Socket.io
+- PureJS
