@@ -15,5 +15,5 @@
 - uuid
 - NodeJS
 - Socket.io
-- PureJS
+- PeerJS
 - webRTC
