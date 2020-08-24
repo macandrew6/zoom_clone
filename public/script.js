@@ -6,8 +6,8 @@ myVideo.muted = true;
 let myVideoStream;
 navigator.mediaDevices
   .getUserMedia({
-    // video: true,
-    // audio: true,
+    video: true,
+    audio: true,
   })
   .then((stream) => {
     myVideoStream = stream;
