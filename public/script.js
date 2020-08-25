@@ -24,11 +24,11 @@ peer.on("open", (id) => {
   socket.emit("join-room", ROOM_ID, id);
 });
 
-socket.on("user-connected", () => {
-  connectToNewUser();
+socket.on("user-connected", (userId) => {
+  connectToNewUser(userId);
 });
 
-const connectToNewUser = () => {
+const connectToNewUser = (userId) => {
   console.log("new user");
 };
 
