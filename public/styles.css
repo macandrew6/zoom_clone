@@ -3,6 +3,14 @@
   display: flex;
 }
 
+.main_left {
+  flex: 0.8;
+}
+
+.main_right {
+  flex: 0.2;
+}
+
 #video-grid {
   display: flex;
   justify-content: center;
