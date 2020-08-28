@@ -1,3 +1,8 @@
+.main {
+  height: 100vh;
+  display: flex;
+}
+
 #video-grid {
   display: flex;
   justify-content: center;
