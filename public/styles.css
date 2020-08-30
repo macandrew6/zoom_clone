@@ -26,6 +26,10 @@ body {
   flex: 0.2;
 }
 
+.main_controls_block {
+  display: flex;
+}
+
 #video-grid {
   display: flex;
   justify-content: center;
