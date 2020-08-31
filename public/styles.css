@@ -34,6 +34,12 @@ body {
 }
 
 .main_controls_block {
+  display: flex;
+}
+
+.main_controls_button {
+  display: flex;
+  flex-direction: column;
 }
 
 #video-grid {
