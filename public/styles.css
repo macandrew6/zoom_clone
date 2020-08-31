@@ -40,6 +40,11 @@ body {
 .main_controls_button {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  min-width: 80px;
+  cursor: pointer;
 }
 
 #video-grid {
