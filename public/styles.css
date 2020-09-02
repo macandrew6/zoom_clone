@@ -48,6 +48,19 @@ body {
   cursor: pointer;
 }
 
+.main_controls_button i {
+  font-size: 24px;
+}
+
+.main_controls_button:hover {
+  background-color: #343434;
+  border-radius: 5px;
+}
+
+.leave_meeting {
+  color: #eb534b;
+}
+
 #video-grid {
   display: flex;
   justify-content: center;
