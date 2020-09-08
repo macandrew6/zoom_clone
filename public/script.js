@@ -12,8 +12,8 @@ var peer = new Peer(undefined, {
 let myVideoStream;
 navigator.mediaDevices
   .getUserMedia({
-    // video: true,
-    // audio: true,
+    video: true,
+    audio: true,
   })
   .then((stream) => {
     myVideoStream = stream;
@@ -57,12 +57,12 @@ let text = $("input");
 
 $("html").keydown((e) => {
   if (e.which === 13 && text.val().length !== 0) {
-    console.log(text.val());
     socket.emit("message", text.val());
     text.val("");
   }
 });
 
 socket.on("createMessage", (message) => {
+  $(".messages").append(`<li class="message"><b>user</b><br/> ${message}</li>`);
   console.log("this is coming from server ", message);
 });
