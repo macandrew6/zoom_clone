@@ -66,3 +66,8 @@ socket.on("createMessage", (message) => {
   $(".messages").append(`<li class="message"><b>user</b><br/> ${message}</li>`);
   console.log("this is coming from server ", message);
 });
+
+const scrollToBottom = () => {
+  let d = $(".main_chat_window");
+  d.scrollTop(d.prop("scrollHeight"));
+};
