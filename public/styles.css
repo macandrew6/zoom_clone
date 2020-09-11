@@ -52,6 +52,10 @@ body {
   list-style: none;
 }
 
+.unmute {
+  color: #cc3b33;
+}
+
 .main_header {
   color: #f5f5f5;
   text-align: center;
