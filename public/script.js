@@ -74,6 +74,7 @@ const scrollToBottom = () => {
 
 // Mute our video:
 const muteUnmute = () => {
+  console.log(myVideoStream);
   const enabled = myVideoStream.getAudioTracks()[0].enabled;
   if (enabled) {
     myVideoStream.getAudioTracks()[0].enabled = false;
@@ -82,4 +83,20 @@ const muteUnmute = () => {
     setMuteButton();
     myVideoStream.getAudioTracks()[0].enabled = true;
   }
+};
+
+const setMuteButton = () => {
+  const html = `
+    <i class="fas fa-microphone"></i>
+    <span>Mute</span>
+  `;
+  document.querySelector(".main_mute_button").innerHTML = html;
+};
+
+const setUnmuteButton = () => {
+  const html = `
+    <i class="umute fas fa-microphone-slash"></i>
+    <span>Unmute</span>
+  `;
+  document.querySelector(".main_mute_button").innerHTML = html;
 };
