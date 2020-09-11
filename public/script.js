@@ -71,3 +71,15 @@ const scrollToBottom = () => {
   let d = $(".main_chat_window");
   d.scrollTop(d.prop("scrollHeight"));
 };
+
+// Mute our video:
+const muteUnmute = () => {
+  const enabled = myVideoStream.getAudioTracks()[0].enabled;
+  if (enabled) {
+    myVideoStream.getAudioTracks()[0].enabled = false;
+    setUnmuteButton();
+  } else {
+    setMuteButton();
+    myVideoStream.getAudioTracks()[0].enabled = true;
+  }
+};
